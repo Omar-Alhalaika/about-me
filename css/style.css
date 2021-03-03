@@ -1,5 +1,39 @@
-nav{ color: brown;}
+nav{ font-family: 'monospace';
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 15px;
+    color: white;
+    align-items: initial;
+
+}
+body{
+    background:radial-gradient(#333,#000);
+}
 h1{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+    color: mintcream;
+    
+}
+    
+
+h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 15px;
+    text-align: center;
+    color: white;
+
+}
+footer{
+    font-family: 'monospace';
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 15px;
+    color: white;
+
 }

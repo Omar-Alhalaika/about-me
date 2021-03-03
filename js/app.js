@@ -77,12 +77,52 @@ common();}
 }
 common();
 
-alert(`It has been my pleasure taking you in a tour about who I am; ` +userName);
+alert(`It has been my pleasure taking you in a tour about who am I; ` +userName);
 
 let counter=1;
+let guessingNo=93;
+let userGuess1=prompt('I have a number in my mind;\nTry to guess it!!');
+let userGuess=parseInt(userGuess1)
 while (counter=4) {
+    if (userGuess==guessingNo) {
+        alert('Great job '+userName)
+    } else { if (userGuess<guessingNo) {alert('Too low \nTry again ' +userName);
+    let userGuess1=prompt('I have a number in my mind;\nTry to guess it!!');
+    let userGuess=parseInt(userGuess1);
+    }
+
+    } else { if (userGuess>guessingNo) {alert('Too high \nTry again ' +userName);
+    let userGuess1=prompt('I have a number in my mind;\nTry to guess it!!');
+    let userGuess=parseInt(userGuess1);
+    }  
+    }
+     counter+=1
+        
+    };
+
+
+let counter2=1;
+let guessingArray=['one','two'];
+let userGuess2=prompt('I have a number in my mind;\nTry to guess it!!');
+
+while (counter=6) {
+    if (userGuess==guessingNo) {
+        alert('Great job '+userName)
+    } else { if (userGuess<guessingNo) {alert('Too low \nTry again ' +userName);
+    let userGuess1=prompt('I have a number in my mind;\nTry to guess it!!');
+    let userGuess=parseInt(userGuess1);
+    }
+
+    } else { if (userGuess>guessingNo) {alert('Too high \nTry again ' +userName);
+    let userGuess1=prompt('I have a number in my mind;\nTry to guess it!!');
+    let userGuess=parseInt(userGuess1);
+    }  
+    }
+     counter+=1
+        
+    };
     
-}
+
     
     
 
