@@ -1,9 +1,11 @@
-nav{ font-family: 'monospace';
+.liNav { font-family: 'monospace';
     font-size: 20px;
-    font-weight: lighter;
-    margin: 15px;
+    display: block;
     color: white;
-    align-items: initial;
+    padding: 20px ;
+    float: left;
+    text-decoration: none;
+    
 
 }
 body{
@@ -21,10 +23,11 @@ h1{
     
 
 h3{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Courgette', cursive;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 20px;
     font-weight: lighter;
-    margin: 15px;
+    margin: 20px;
     text-align: center;
     color: white;
 
@@ -32,8 +35,13 @@ h3{
 footer{
     font-family: 'monospace';
     font-size: 20px;
-    font-weight: lighter;
-    margin: 15px;
+    padding: 20px;
     color: white;
+    display: block;
+    float: left;
+    text-decoration: none
 
 }
+ol li h3 {
+    list-style-type: decimal;
+  }
