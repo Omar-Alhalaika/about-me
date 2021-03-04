@@ -6,3 +6,10 @@ I will take you on a journey to know who I am, and what my ambitions are!
 * reset.css cridet to [here](http://meyerweb.com/eric/tools/css/reset/ )
 
 >You can find me on [GitHub](https://github.com/Omar-Alhalaika)
+
+> We are working on Lab: 04 - Pair Programming:
+
+* Driver: Omar Alhalaika
+* Navigator: Bayan Alkhatib
+
+   
