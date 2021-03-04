@@ -7,77 +7,87 @@ alert(`Welcome `+userName+`, it is my pleasure to know you!`);
 
 let myBackground=prompt(`Try to guess this! \nDo I have an IT background? \n (yes/no)?`);
     
-function background(input1) {  
+function background(input1) {    
+    
 if (myBackground.toLowerCase() ==`yes`||myBackground.toLowerCase() ==`y`) {
     //console.log(`Great job `+userName)
     alert(`Great job `+userName);
     score++;
 }else if (myBackground.toLowerCase() ==`no`||myBackground.toLowerCase() ==`n`) {
     alert (`Actully I do have an IT background`);
-    
-}else  {
-background(myBackground);}
+ 
 }
-
+// else  {
+// background();
+// }
+}
 background(myBackground);
 
-// function experience() {
-//     let myExperience=prompt(`Try to guess this too! \nDo I have more than 5 years of experience? \n (yes/no)?`);
-    
-// if (myExperience.toLowerCase() ==`yes`||myExperience.toLowerCase() ==`y`) {
-//     //console.log(`Great job `+userName)
-//     alert(`Great job `+userName);score++;
-// }else if (myExperience.toLowerCase() ==`no`||myExperience.toLowerCase() ==`n`) {
-//     alert (`Actully I do have more than 5 years of experience`);
-    
-// }else  {
-// experience();}
-// }
-// experience();
+let myExperience=prompt(`Try to guess this too! \nDo I have more than 5 years of experience? \n (yes/no)?`);
 
-// function hobbies() {
-//     let myHobbies=prompt(`Try to guess this! \nDo you think Art is one of my fav. hobbies? \n (yes/no)?`);
+function experience(input2) {
+if (myExperience.toLowerCase() ==`yes`||myExperience.toLowerCase() ==`y`) {
+    //console.log(`Great job `+userName)
+    alert(`Great job `+userName);score++;
+}else if (myExperience.toLowerCase() ==`no`||myExperience.toLowerCase() ==`n`) {
+    alert (`Actully I do have more than 5 years of experience`);
     
-// if (myHobbies.toLowerCase() ==`yes`||myHobbies.toLowerCase() ==`y`) {
-//     //console.log(`Great job `+userName)
-//     alert(`Well done `+userName);score++;
-// }else if (myHobbies.toLowerCase() ==`no`||myHobbies.toLowerCase() ==`n`) {
-//     alert (`In fact it is`);
-    
-// }else  {
-// hobbies();}
+}
+// else  {
+// experience(myExperience);
 // }
-// hobbies();
+}
+experience(myExperience);
 
-// function spanish() {
-//     let mySpanish=prompt(`Try to guess this! \nDo you think I can speak Spanish? \n (yes/no)?`);
+let myHobbies=prompt(`Try to guess this! \nDo you think Art is one of my fav. hobbies? \n (yes/no)?`);
+
+function hobbies(input3) {    
+if (myHobbies.toLowerCase() ==`yes`||myHobbies.toLowerCase() ==`y`) {
+    //console.log(`Great job `+userName)
+    alert(`Well done `+userName);score++;
+}else if (myHobbies.toLowerCase() ==`no`||myHobbies.toLowerCase() ==`n`) {
+    alert (`In fact it is`);
     
-// if (mySpanish.toLowerCase() ==`yes`||mySpanish.toLowerCase() ==`y`) {
-//     //console.log(`Great job `+userName)
-//     alert(`Great job `+userName);score++;
-// }else if (mySpanish.toLowerCase() ==`no`||mySpanish.toLowerCase() ==`n`) {
-//     alert (`I wish to! \nbut I can't`);
-    
-// }else {
-// spanish();}
+}
+// else  {
+// hobbies(myHobbies);
 // }
-// spanish();
+}
+hobbies(myHobbies);
 
-// function common() {
-//     let incommon=prompt(`Try to guess this! \nDo you think that we have anything in common? \n (yes/no)?`);
+let mySpanish=prompt(`Try to guess this! \nDo you think I can speak Spanish? \n (yes/no)?`);
     
-// if (incommon.toLowerCase() ==`yes`||incommon.toLowerCase() ==`y`) {
-//     //console.log(`Great job `+userName)
-//     alert(`Yes, I think we do `+userName);score++;
-// }else if (incommon.toLowerCase() ==`no`||incommon.toLowerCase() ==`n`) {
-//     alert (`Maybe \nbut I think there is something in common`);
+function spanish(input4) {  
+if (mySpanish.toLowerCase() ==`yes`||mySpanish.toLowerCase() ==`y`) {
+    //console.log(`Great job `+userName)
+    alert(`Great job `+userName);score++;
+}else if (mySpanish.toLowerCase() ==`no`||mySpanish.toLowerCase() ==`n`) {
+    alert (`I wish to! \nbut I can't`);
     
-// }else {
-// common();}
+}
+// else {
+// spanish(mySpanish);
 // }
-// common();
+}
+spanish(mySpanish);
 
-// alert(`It has been my pleasure taking you in a tour about who am I; ` +userName);
+let incommon=prompt(`Try to guess this! \nDo you think that we have anything in common? \n (yes/no)?`);
+
+function common(input5) {
+if (incommon.toLowerCase() ==`yes`||incommon.toLowerCase() ==`y`) {
+    //console.log(`Great job `+userName)
+    alert(`Yes, I think we do `+userName);score++;
+}else if (incommon.toLowerCase() ==`no`||incommon.toLowerCase() ==`n`) {
+    alert (`Maybe \nbut I think there is something in common`);
+    
+}
+// else {
+// common(incommon);
+// }
+}
+common(incommon);
+
+
 
 // let counter=1;
 // let guessingNo=93;
@@ -116,6 +126,8 @@ background(myBackground);
    
 //   }
 //   alert('Well, the sporst are\nskating, bodybuilding, boxing, & walking');
+
+//alert(`It has been my pleasure taking you in a tour about who am I; ` +userName);
   
 // let userScore=alert('And here is your score out of 7\nScore : '+score);
 
