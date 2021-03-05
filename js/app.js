@@ -89,47 +89,58 @@ common(incommon);
 
 
 
-// let counter=1;
-// let guessingNo=93;
-// let userGuess1=prompt('I have a number in my mind (0-100);\nTry to guess it!!');
-// // let userGuess=parseInt(userGuess1)
-// while (counter<4) {
-//     if (parseInt(userGuess1)==guessingNo) {alert('Great job '+userName);score++;counter=4;
-//         break;
-        
-//     } else  if (parseInt(userGuess1)<guessingNo) {userGuess1=prompt('Too low '+userName+ '\nTry to guess it again!');
-       
-//     }else { if (parseInt(userGuess1)>guessingNo) {userGuess1=prompt('Too high '+userName+ '\nTry to guess it again!');
-//             };
-//     };
-//      counter++;
-        
-//     };
-//     alert('The number is 93')
+let counter=1;
+let guessingNo=93;
+
+function guessingNum(userGuess){
+let userGuess1=prompt('I have a number in my mind (0-100);\nTry to guess it!!');
+// let userGuess=parseInt(userGuess1)
+while (counter<4) {
+    if (parseInt(userGuess1)==guessingNo) {alert('Great job '+userName);
+    score++;
+    counter=4;
+    break;
+    } else  if (parseInt(userGuess1)<guessingNo) {userGuess1=prompt('Too low '+userName+ '\nTry to guess it again!');
+    counter++;
+    }else if (parseInt(userGuess1)>guessingNo) {userGuess1=prompt('Too high '+userName+ '\nTry to guess it again!');
+     counte++; 
+    }if( counter===4){
+        alert('The number is 93'); 
+    }
+    }   
+    }
+ guessingNum();
+    alert('The number is 93');
 
 
-// let counter2=1;
-// let guessingArray=['skating','bodybuilding','boxing','walking'];
-// let userGuess2=prompt('I enjoy doing sports;\nCan you guess any of them!!');
 
-// while (counter2<6) {
-//     for (let i = 0; i < guessingArray.length; i++) {
-//     if (userGuess2.toLowerCase==guessingArray[i]) {alert('Great job '+userName);score++;counter2=7;
-//     break;
+let counter2=1;
+let guessingArray=['skating','bodybuilding','boxing','walking'];
+let userGuess2=prompt('I enjoy doing sports;\nCan you guess any of them!!');
 
-//     } else  if (counter2!==7) {
-//         userGuess2=prompt('Not exctly '+userName+ '\nTry again!');
-        
-   
-//     };  counter2++;
-//     };
-   
-//   }
-//   alert('Well, the sporst are\nskating, bodybuilding, boxing, & walking');
+function sports(sport){
+while (counter2<=6) {
+    for (let i = 0; i<guessingArray.length;i++){
+    if (userGuess2.toLowerCase()==guessingArray[i]) {
+        alert('Great job '+userName);
+    score++;
+    counter2=7;
+    //console.log(j);
+    break;
+    }
+    } if (counter2!==7) {
+        userGuess2=prompt('Not exctly '+userName+ '\nTry again!');
+        counter2++;
+    } else if(counter2===6){
+        alert('Well, the sporst are\nskating, bodybuilding, boxing, & walking');
+    }
+    }
+}
 
-//alert(`It has been my pleasure taking you in a tour about who am I; ` +userName);
+sports(userGuess2);
+alert(`It has been my pleasure taking you in a tour about who am I; ` +userName);
   
-// let userScore=alert('And here is your score out of 7\nScore : '+score);
+let userScore=alert('And here is your score out of 7\nScore : '+score);
 
     
     
