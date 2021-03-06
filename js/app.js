@@ -5,10 +5,10 @@ let userName=prompt(`What can I call you dear?`);
 let score=0
 alert(`Welcome `+userName+`, it is my pleasure to know you!`);
 
-let myBackground=prompt(`Try to guess this! \nDo I have an IT background? \n (yes/no)?`);
     
 function background(input1) {    
-    
+    let myBackground=prompt(`Try to guess this! \nDo I have an IT background? \n (yes/no)?`);
+  
 if (myBackground.toLowerCase() ==`yes`||myBackground.toLowerCase() ==`y`) {
     //console.log(`Great job `+userName)
     alert(`Great job `+userName);
@@ -17,15 +17,16 @@ if (myBackground.toLowerCase() ==`yes`||myBackground.toLowerCase() ==`y`) {
     alert (`Actully I do have an IT background`);
  
 }
-// else  {
-// background();
-// }
+else  {
+background();
+};
 }
-background(myBackground);
 
-let myExperience=prompt(`Try to guess this too! \nDo I have more than 5 years of experience? \n (yes/no)?`);
+background();
+
 
 function experience(input2) {
+    let myExperience=prompt(`Try to guess this too! \nDo I have more than 5 years of experience? \n (yes/no)?`);
 if (myExperience.toLowerCase() ==`yes`||myExperience.toLowerCase() ==`y`) {
     //console.log(`Great job `+userName)
     alert(`Great job `+userName);score++;
@@ -33,15 +34,16 @@ if (myExperience.toLowerCase() ==`yes`||myExperience.toLowerCase() ==`y`) {
     alert (`Actully I do have more than 5 years of experience`);
     
 }
-// else  {
-// experience(myExperience);
-// }
-}
+else  {
 experience(myExperience);
+}
+}
+experience();
 
 let myHobbies=prompt(`Try to guess this! \nDo you think Art is one of my fav. hobbies? \n (yes/no)?`);
 
-function hobbies(input3) {    
+function hobbies(input3) {   
+    let myHobbies=prompt(`Try to guess this! \nDo you think Art is one of my fav. hobbies? \n (yes/no)?`);
 if (myHobbies.toLowerCase() ==`yes`||myHobbies.toLowerCase() ==`y`) {
     //console.log(`Great job `+userName)
     alert(`Well done `+userName);score++;
@@ -49,15 +51,15 @@ if (myHobbies.toLowerCase() ==`yes`||myHobbies.toLowerCase() ==`y`) {
     alert (`In fact it is`);
     
 }
-// else  {
-// hobbies(myHobbies);
-// }
-}
+else  {
 hobbies(myHobbies);
+}
+}
+hobbies();
 
-let mySpanish=prompt(`Try to guess this! \nDo you think I can speak Spanish? \n (yes/no)?`);
     
 function spanish(input4) {  
+    let mySpanish=prompt(`Try to guess this! \nDo you think I can speak Spanish? \n (yes/no)?`);
 if (mySpanish.toLowerCase() ==`yes`||mySpanish.toLowerCase() ==`y`) {
     //console.log(`Great job `+userName)
     alert(`Great job `+userName);score++;
@@ -65,15 +67,15 @@ if (mySpanish.toLowerCase() ==`yes`||mySpanish.toLowerCase() ==`y`) {
     alert (`I wish to! \nbut I can't`);
     
 }
-// else {
-// spanish(mySpanish);
-// }
-}
+else {
 spanish(mySpanish);
+}
+}
+spanish();
 
-let incommon=prompt(`Try to guess this! \nDo you think that we have anything in common? \n (yes/no)?`);
 
 function common(input5) {
+    let incommon=prompt(`Try to guess this! \nDo you think that we have anything in common? \n (yes/no)?`);
 if (incommon.toLowerCase() ==`yes`||incommon.toLowerCase() ==`y`) {
     //console.log(`Great job `+userName)
     alert(`Yes, I think we do `+userName);score++;
@@ -81,11 +83,11 @@ if (incommon.toLowerCase() ==`yes`||incommon.toLowerCase() ==`y`) {
     alert (`Maybe \nbut I think there is something in common`);
     
 }
-// else {
-// common(incommon);
-// }
-}
+else {
 common(incommon);
+}
+}
+common();
 
 
 
@@ -96,29 +98,27 @@ function guessingNum(userGuess){
 let userGuess1=prompt('I have a number in my mind (0-100);\nTry to guess it!!');
 // let userGuess=parseInt(userGuess1)
 while (counter<4) {
-    if (parseInt(userGuess1)==guessingNo) {alert('Great job '+userName);
+    if (parseInt(userGuess1)==guessingNo) {
+        alert('Great job '+userName);
     score++;
     counter=4;
     break;
-    } else  if (parseInt(userGuess1)<guessingNo) {userGuess1=prompt('Too low '+userName+ '\nTry to guess it again!');
+    } else  if (parseInt(userGuess1)<guessingNo) {userGuess1=prompt('Too low '+userName+ '\nIt is more than 80!');
     counter++;
-    }else if (parseInt(userGuess1)>guessingNo) {userGuess1=prompt('Too high '+userName+ '\nTry to guess it again!');
-     counte++; 
+    }else if (parseInt(userGuess1)>guessingNo) {userGuess1=prompt('Too high '+userName+ '\nIt is less than 95!');
+     counter++; 
     }if( counter===4){
         alert('The number is 93'); 
     }
     }   
-    }
+}
  guessingNum();
-    alert('The number is 93');
-
-
 
 let counter2=1;
 let guessingArray=['skating','bodybuilding','boxing','walking'];
-let userGuess2=prompt('I enjoy doing sports;\nCan you guess any of them!!');
 
 function sports(sport){
+    let userGuess2=prompt('I enjoy doing sports;\nCan you guess any of them!!');
 while (counter2<=6) {
     for (let i = 0; i<guessingArray.length;i++){
     if (userGuess2.toLowerCase()==guessingArray[i]) {
@@ -137,11 +137,9 @@ while (counter2<=6) {
     }
 }
 
-sports(userGuess2);
+sports();
 alert(`It has been my pleasure taking you in a tour about who am I; ` +userName);
   
 let userScore=alert('And here is your score out of 7\nScore : '+score);
 
     
-    
-

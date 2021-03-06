@@ -1,23 +1,40 @@
 .liNav { font-family: 'monospace';
-    font-size: 20px;
+    font-size: 25px;
     display: block;
-    color: white;
-    padding: 20px ;
+    color: #0D0D0D;
+    padding: 25px ;
     float: left;
     text-decoration: none;
+    position: relative;
+    font-weight: bolder;
     
+}
+a{font-family: 'monospace';
+    font-size: 20px;
+    display: block;
+    color: #0D0D0D;
+    text-decoration: none;
+}
 
+main{
+
+padding-top: 70px;
 }
 body{
-    background:radial-gradient(#333,#000);
+    /* background:radial-gradient(#333,#000); */
+    /* background-image: linear-gradient(to top,#0554F2,#0D0D0D); */
+    background-image: url("/img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h1{
     font-family: 'Courgette', cursive;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
     margin: 20px;
     text-align: center;
-    color: mintcream;
+    color: #F20505;
     
 }
     
@@ -25,23 +42,51 @@ h1{
 h3{
     font-family: 'Courgette', cursive;
     /* font-family: 'Playfair Display', serif; */
-    font-size: 20px;
+    font-size: 25px;
     font-weight: lighter;
     margin: 20px;
     text-align: center;
-    color: white;
+    color: #0D0D0D;
+    font-weight: bolder;
+    line-height: 1.5;
+    
 
 }
-footer{
-    font-family: 'monospace';
-    font-size: 20px;
-    padding: 20px;
-    color: white;
+footer{font-family: 'monospace';
+    font-size: 25px;
     display: block;
+    color: #0D0D0D;
+    padding: 25px ;
     float: left;
-    text-decoration: none
+    text-decoration: none;
+    position: relative;
+    font-weight: bolder;
+  
 
 }
-ol li h3 {
-    list-style-type: decimal;
-  }
+/* @import url('https://fonts.googleapis.com/css?family=Abril+Fatface'); */
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+  display: flex;
+  width: 300px;
+  font-size: 0.3rem;
+  margin-bottom: 10px;
+  padding-left: 200px;
+}
+ol li::before {
+  content: "0" counter(my-awesome-counter);
+  font-weight: bold;
+  font-size: 35px;
+  margin-right: 0.5rem;
+  font-family: 'Abril Fatface', serif;
+  line-height: 1;
+}
